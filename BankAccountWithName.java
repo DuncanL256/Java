@@ -1,12 +1,15 @@
-public class BankAccount {
+public class BankAccountWithName {
     private double balance;
+    private String name;
 
-    public BankAccount(){
+    public BankAccountWithName(){
         balance = 0;
+        name = "Jane Doe";
     }
 
-    public BankAccount(double initialBalance){
+    public BankAccountWithName(double initialBalance, String n){
         balance = initialBalance;
+        name = n;
     }
 
     public void deposit(double amount){
@@ -19,5 +22,9 @@ public class BankAccount {
 
     public double getBalance(){
         return balance;
+    }
+
+    public String getName(){
+        return name;
     }
 }
