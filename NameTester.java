@@ -14,40 +14,18 @@ public class NameTester {
         System.out.println("yuh");
 
         String full = firstName + blank + lastName;
-        String printed = full.substring(0);
-        System.out.println(printed);
+        
+        int index = 0;
+        for (int i = 0; i < full.length(); i++) {
+            
+            int end = index + 1;
 
-        printed = full.substring(1);
-        System.out.println(printed);
+            String printed = full.substring(index, end);
+            System.out.println(printed);
 
-        printed = full.substring(2);
-        System.out.println(printed);
-
-        printed = full.substring(3);
-        System.out.println(printed);
-
-        printed = full.substring(4);
-        System.out.println(printed);
-
-        printed = full.substring(5);
-        System.out.println(printed);
-
-        printed = full.substring(6);
-        System.out.println(printed);
-
-        printed = full.substring(7);
-        System.out.println(printed);
-
-        printed = full.substring(8);
-        System.out.println(printed);
-
-        printed = full.substring(9);
-        System.out.println(printed);
-
-        printed = full.substring(10);
-        System.out.println(printed);
-
-        printed = full.substring(11);
-        System.out.println(printed);
+            index++;
+        }
+        
+        
     }
 }
